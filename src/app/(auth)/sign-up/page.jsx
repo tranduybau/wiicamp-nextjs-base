@@ -6,9 +6,8 @@ import { useRouter } from 'next/navigation';
 
 import ROUTES from '@/constant/routes';
 
-export default function SignInPage() {
+export default function SignUpPage() {
   const router = useRouter();
-
   const onSubmit = useCallback(
     (event) => {
       event.preventDefault();
@@ -24,7 +23,7 @@ export default function SignInPage() {
         className="p-10 xs:p-0 mx-auto md:w-full md:max-w-md"
         onSubmit={onSubmit}
       >
-        <h1 className="font-bold text-center text-2xl mb-5">Wiicamp</h1>
+        <h1 className="font-bold text-center text-2xl mb-5">Your Logo</h1>
         <div className="bg-white shadow w-full rounded-lg divide-y divide-gray-200">
           <div className="px-5 py-7">
             <label
@@ -54,7 +53,7 @@ export default function SignInPage() {
               type="submit"
               className="transition duration-200 bg-blue-500 hover:bg-blue-600 focus:bg-blue-700 focus:shadow-sm focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 text-white w-full py-2.5 rounded-lg text-sm shadow-sm hover:shadow-md font-semibold text-center inline-block"
             >
-              <span className="inline-block mr-2">Login</span>
+              <span className="inline-block mr-2">Sign Up</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

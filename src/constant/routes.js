@@ -1,4 +1,4 @@
-const routes = {
+const ROUTES = {
   // Public
   HOME: '/',
 
@@ -12,4 +12,4 @@ const routes = {
   SETTINGS: '/settings',
 };
 
-export default routes;
+export default ROUTES;
